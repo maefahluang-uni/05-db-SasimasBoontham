@@ -37,7 +37,7 @@
                 var email = $("#email").val();
 
                 $.ajax({
-                    url: "http://localhost:8080/users", // Your Spring Boot API endpoint
+                    url: "https://fictional-space-computing-machine-q74p7qrgprggf9q6r-8080.app.github.dev/users", // Your Spring Boot API endpoint
                     type: "POST",
                     contentType: "application/json",
                     data: JSON.stringify({
@@ -62,7 +62,7 @@
             // Load User List
             function loadUserList() {
                 $.ajax({
-                    url: "http://localhost:8080/users", // Your Spring Boot API endpoint
+                    url: "https://fictional-space-computing-machine-q74p7qrgprggf9q6r-8080.app.github.dev/users", // Your Spring Boot API endpoint
                     type: "GET",
                     success: function(response) {
                         // Display the user list
@@ -88,7 +88,7 @@
 
                 if (confirm("Are you sure you want to delete user: " + id + "?")) {
                     $.ajax({
-                        url: "http://localhost:8080/users/" + id, // Your Spring Boot API endpoint
+                        url: "https://fictional-space-computing-machine-q74p7qrgprggf9q6r-8080.app.github.dev/users/" + id, // Your Spring Boot API endpoint
                         type: "DELETE",
                         success: function(response) {
                             // Handle successful deletion
